@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  hsl(216, 12%, 8%);
+    /* width: 100%; */
+}
+
+.container, .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container2 {
+    display: none;
+}
+
+
+form, .parent{
+    width: 280px;
+    background: linear-gradient( hsl(207, 21%, 10%),  hsl(219, 19%, 14%)
+    );
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.parent2 {
+    text-align: center;
+}
+
+.images {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    position: relative;
+    /* padding: 3px 5px 3px 5px; */
+}
+
+.images img {
+    width: 10px;
+    transform: translate(50%, 50%);
+    position: absolute;
+    top: 10%;
+    left: 11%;
+}
+
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.list p{
+    /* text-decoration: none;
+    display: inline-block; */
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    text-align: center;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(213, 19%, 18%);
+    font-weight: 600;
+    cursor: pointer;
+    /* margin-bottom: 12px; */
+}
+
+
+.list p:hover {
+    background-color: hsl(25, 97%, 53%);
+     color: hsl(0, 0%, 100%);
+     cursor: pointer;
+}
+
+.list p:active {
+    background: hsl(217, 12%, 63%);
+}
+
+button, a  {
+    outline: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+/* thank you page */
+
+p.note {
+    background-color: hsl(213, 19%, 18%);
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+    margin-top: 12px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.thanks {
+    color: hsl(217, 12%, 63%);
+    margin: 10px;
+    font-family: 'Overpass', sans-serif;
+}
