@@ -16,29 +16,11 @@ vals.forEach(function (val) {
     submitBtn.addEventListener('click', submitFunc);
 
     function submitFunc() {
-      if (ratingValue === '1') {
-        ratingText.innerHTML = "You Selected 1 out of 5";
-        containerOne.style.display = 'none';
-        containerTwo.style.display = 'flex';
-      } else if (ratingValue === '2') {
-        ratingText.innerHTML = "You Selected 2 out of 5";
-        containerOne.style.display = 'none';
-        containerTwo.style.display = 'flex';
-      } else if (ratingValue === '3') {
-        ratingText.innerHTML = "You Selected 3 out of 5";
-        containerOne.style.display = 'none';
-        containerTwo.style.display = 'flex';
-      } else if (ratingValue === '4') {
-        ratingText.innerHTML = "You Selected 4 out of 5";
-        containerOne.style.display = 'none';
-        containerTwo.style.display = 'flex';
-      } else if (ratingValue === '5') {
-        ratingText.innerHTML = "Wow, You Selected 5 out of 5";
-        containerOne.style.display = 'none';
-        containerTwo.style.display = 'flex';
-      } 
+     ratingText.innerHTML = "You selected " + ratingValue + " out of 5";
+     containerOne.style.display = "none";
+     containerTwo.style.display = "flex";
 
-      setTimeout(timeOut, 3000);
+     setTimeout(timeOut, 3000);
 
       function timeOut() {
         containerOne.style.display = 'flex';
@@ -49,6 +31,27 @@ vals.forEach(function (val) {
 })
 
 
+//  if (ratingValue === '1') {
+//         ratingText.innerHTML = "You Selected 1 out of 5";
+//         containerOne.style.display = 'none';
+//         containerTwo.style.display = 'flex';
+//       } else if (ratingValue === '2') {
+//         ratingText.innerHTML = "You Selected 2 out of 5";
+//         containerOne.style.display = 'none';
+//         containerTwo.style.display = 'flex';
+//       } else if (ratingValue === '3') {
+//         ratingText.innerHTML = "You Selected 3 out of 5";
+//         containerOne.style.display = 'none';
+//         containerTwo.style.display = 'flex';
+//       } else if (ratingValue === '4') {
+//         ratingText.innerHTML = "You Selected 4 out of 5";
+//         containerOne.style.display = 'none';
+//         containerTwo.style.display = 'flex';
+//       } else if (ratingValue === '5') {
+//         ratingText.innerHTML = "Wow, You Selected 5 out of 5";
+//         containerOne.style.display = 'none';
+//         containerTwo.style.display = 'flex';
+//       } 
 
 
 
